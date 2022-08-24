@@ -7,10 +7,15 @@ namespace Minesweeper
     {
         public static void Main(string[] args)
         {
-            char[] array1 = { 'x', '0', '0' };
-            char[] array2 = { '0', '0', '0' };
-            char[] array3 = { 'x', 'x', '0' };
-            Solution(new char[3][] { array1, array2, array3 });
+            char[] array1 = "xOOxxxOO".ToCharArray();
+            char[] array2 = "OOOOxOxx".ToCharArray();
+            char[] array3 = "xxOxxOOO".ToCharArray();
+            char[] array4 = "OxOOOxxx".ToCharArray();
+            char[] array5 = "OOxxxxOx".ToCharArray();
+            char[] array6 = "xOxxxOxO".ToCharArray();
+            char[] array7 = "OOOxOxOx".ToCharArray();
+            char[] array8 = "xOxxOxOx".ToCharArray();
+            Solution(new char[8][] { array1, array2, array3, array4, array5, array6, array7, array8 });
         }
 
         internal static void Solution(char[][] matrix)
